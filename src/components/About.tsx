@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { about, experience, projects, skills } from "@/data/portfolio";
+import { about, experience, projects, skills, certifications } from "@/data/portfolio";
 import { Award, Briefcase, Code2, Sparkles } from "lucide-react";
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
     {
       icon: Briefcase,
       label: "Years Experience",
-      value: "4+",
+      value: "3+",
       color: "from-accent to-yellow-400",
     },
     {
@@ -37,13 +37,13 @@ const About = () => {
     {
       icon: Sparkles,
       label: "Technologies",
-      value: Object.values(skills).flat().length.toString() + "+",
+      value: "45+",
       color: "from-accent to-primary",
     },
     {
       icon: Award,
-      label: "Research Papers",
-      value: "5+",
+      label: "Certifications",
+      value: certifications.length.toString(),
       color: "from-primary to-accent",
     },
   ];
